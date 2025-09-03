@@ -13,8 +13,15 @@ int main()
 	cout<<"name : "<<name<<endl;
 	
 	
-	int x=10,y=20,z=40;//multiple variables in oneline
+//	int x=10,y=20,z=40;//multiple variables in oneline
+//	cout<<"x : "<<x<<" y : "<<y<<" z : "<<z<<endl;
+	
+	
+	int x,y,z;
+	x=y=z=10;//same value multiple variables
 	cout<<"x : "<<x<<" y : "<<y<<" z : "<<z<<endl;
+	
+	
 	
 	
 	return 0;
