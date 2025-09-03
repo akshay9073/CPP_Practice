@@ -12,5 +12,10 @@ int main()
 	cout<<"id : "<<ch<<endl;
 	cout<<"name : "<<name<<endl;
 	
+	
+	int x=10,y=20,z=40;//multiple variables in oneline
+	cout<<"x : "<<x<<" y : "<<y<<" z : "<<z<<endl;
+	
+	
 	return 0;
 }
