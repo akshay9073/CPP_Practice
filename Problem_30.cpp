@@ -18,6 +18,7 @@ int main()
 	cout<<names[i]<<endl;
 	
 	names.insert(names.begin()+2,"Good");
+	names[3]="akshay";
 	names.pop_back();
 	
 	cout<<"After : "<<endl;
