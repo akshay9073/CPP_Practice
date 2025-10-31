@@ -17,6 +17,8 @@ int main()
 	
 	cars.pop();
 	
+	cout<<cars.top();//prints stack top element;
+	cout<<cars.size();
 		
 	
 	
