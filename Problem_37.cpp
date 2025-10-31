@@ -15,5 +15,9 @@ int main()
 		cars.push(temp);
 	}
 	
+	cars.pop();
+	
+		
+	
 	
 }
