@@ -16,9 +16,16 @@ int main()
 	}
 	
 	cars.pop();
+	cars.pop();
+	cars.pop();
+	cars.pop();
+	cars.pop();
+	
 	
 	cout<<cars.top();//prints stack top element;
-	cout<<cars.size();
+	cout<<cars.size();//prints size of the stack
+	
+	cout<<cars.empty();//prints 1 if stack is empty else 0
 		
 	
 	
