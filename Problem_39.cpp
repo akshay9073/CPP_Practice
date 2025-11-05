@@ -2,7 +2,7 @@
 
 using namespace std;
 int fun(int);
-
+int fun1(int &);
 int main(int argc,char *argv)
 {
 	int num;
@@ -12,7 +12,8 @@ int main(int argc,char *argv)
 	cout<<"Value of Num in main (before function call): "<<num<<endl;//pass by value
 	fun(num);
 	cout<<"Value of Num in main (after function call): "<<num<<endl;//pass by value
-	
+	fun1(num);
+	cout<<"Value of Num in main (after function call): "<<num<<endl;//pass by address
 	return 0;
 }
 
@@ -21,3 +22,11 @@ int fun(int somevalue)
 	somevalue=100;
 	cout<<"Value of num in fun : "<<somevalue<<endl;
 }
+
+int fun1(int &somevalue)
+{
+	somevalue=100;
+	cout<<"Value of num in fun : "<<somevalue<<endl;
+}
+
+
