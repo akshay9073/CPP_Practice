@@ -39,7 +39,7 @@ class House{
 		int numWindows;
 		string color;
 };
-
+void printData(House);
 int main()
 {
 	House myHouse;
@@ -54,10 +54,22 @@ int main()
 	yourHouse.setNumWindow(40);
 	yourHouse.setColor("Green");
 	
-	cout<<"House has : "<<myHouse.getColor()
-	<<" color "<<"\t "<<myHouse.getNumStories()<<" floor "<<" and "<<myHouse.getNumWindows()<<" windows"<<endl;
-	
-		cout<<"Your House has : "<<yourHouse.getColor()
-	<<" color "<<"\t "<<yourHouse.getNumStories()<<" floor "<<" and "<<yourHouse.getNumWindows()<<" windows"<<endl;
+//	cout<<"House has : "<<myHouse.getColor()
+//	<<" color "<<"\t "<<myHouse.getNumStories()<<" floor "<<" and "<<myHouse.getNumWindows()<<" windows"<<endl;
+//	
+//		cout<<"Your House has : "<<yourHouse.getColor()
+//	<<" color "<<"\t "<<yourHouse.getNumStories()<<" floor "<<" and "<<yourHouse.getNumWindows()<<" windows"<<endl;
+
+	printData(myHouse);
+	printData(yourHouse);
 
 }
+
+
+void printData(House house)
+{
+	cout<<"House has : "<<house.getColor()
+	<<" color "<<"\t "<<house.getNumStories()<<" floor "<<" and "<<house.getNumWindows()<<" windows"<<endl;
+}
+
+
