@@ -9,6 +9,12 @@ using namespace std;
 			this->color="white";
 			
 		}
+		
+		House::~House()
+		{
+			cout<<"The "<<color<< " house with "<<numStories<< " stories"
+			<<" and "<<numWindows <<" windows is being destroyed!!"<<endl;
+		}
 
 		void House::setNumStories(int numStories)
 		{
