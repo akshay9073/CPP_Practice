@@ -20,5 +20,10 @@ int main()
 	
 	cout<<"r1 area is now "<<r1.area()<<endl;
 	
+	
+	cout<<"r1 Perimeter is "<<r1.area()<<endl;
+	cout<<"r2 Perimeter is "<<r2.area()<<endl;
+	
+	
 	return 0;
 }

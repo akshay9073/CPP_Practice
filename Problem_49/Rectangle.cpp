@@ -38,3 +38,7 @@ double Rectangle::area() const{
 
 return length*width;
 }
+
+double Rectangle::perimeter() const{
+return (2*(length+width));
+}

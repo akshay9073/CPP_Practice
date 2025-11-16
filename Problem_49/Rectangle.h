@@ -13,6 +13,8 @@ class Rectangle{
 	
 	double area() const;
 	
+	double perimeter() const;
+	
 	private:
 		double length;
 		double width;
