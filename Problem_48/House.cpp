@@ -9,7 +9,12 @@ using namespace std;
 			this->color="white";
 			
 		}
-		
+		House::House(int numStories,int numWindows,string color)
+		{
+			this->numStories=numStories;
+			this->numWindows=numWindows;
+			this->color=color;
+		}
 		House::~House()
 		{
 			cout<<"The "<<color<< " house with "<<numStories<< " stories"

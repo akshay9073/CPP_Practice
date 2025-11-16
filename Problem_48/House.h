@@ -8,6 +8,7 @@ class House{
 	public:
 		House();
 		~House();
+		House(int numStories,int numWindows, string color);
 		void setNumStories(int);
 		void setNumWindow(int );		
 		void setColor(string );

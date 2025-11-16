@@ -6,7 +6,9 @@ using namespace std;
 
 int main()
 {
-	House myHouse;
+//	House myHouse;
+	House theirHouse(2,10,"Black");
+	
 	
 //	House yourHouse;
 //	
@@ -28,20 +30,22 @@ int main()
 //	myHouse.printData();
 //	
 
-
-	cout<<"Before calling any user-defined function : "<<endl;
-	myHouse.printData();
-	
-	
-	cout<<"\nAfter calling any user-defined function : "<<endl;
-		myHouse.setNumStories(2);
-		myHouse.setNumWindow(8);
-		myHouse.setColor("Pink");
-	
-	
-	
-		myHouse.printData();
-	
 	
 
+//	cout<<"Before calling any user-defined function : "<<endl;
+//	myHouse.printData();
+//	
+//	
+//	cout<<"\nAfter calling any user-defined function : "<<endl;
+//		myHouse.setNumStories(2);
+//		myHouse.setNumWindow(8);
+//		myHouse.setColor("Pink");
+//	
+//	
+//	
+//		myHouse.printData();
+//	
+//	
+
+	theirHouse.printData();
 }
