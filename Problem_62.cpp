@@ -43,3 +43,22 @@ void cp2ncd()
 	 
 	 delete myPtr;
 }
+
+void ncp2cd ()
+{
+	cout<<"In ncp2cd"<<endl;
+	
+	const int *myPtr= new int(100);
+	
+	cout<<"\nOriginal value : "<<*myPtr<<endl;
+	
+//	*myPtr=500;
+//	cout<<"\nModified value : "<<*myPtr<<endl;
+
+	
+	delete myPtr;
+	
+	myPtr=new int(200);
+	
+	cout<<"\nNew value is : "<<*myPtr<<endl;
+}
