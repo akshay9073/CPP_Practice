@@ -3,12 +3,15 @@ using namespace std;
 
 void noConst();
 void cp2ncd();
+void ncp2cd();
+void cp2cd();
 
 int main()
 {
 	noConst();
 	cp2ncd();
-	
+	ncp2cd();
+	cp2cd();
 	return 0;
 	
 }
@@ -61,4 +64,23 @@ void ncp2cd ()
 	myPtr=new int(200);
 	
 	cout<<"\nNew value is : "<<*myPtr<<endl;
+}
+
+void cp2cd()
+{
+	cout<<"In cp2cd"<<endl;
+	
+	const int *const myPtr=new int(200);
+	
+	cout<<"\nOriginal value : "<<*myPtr<<endl;
+	
+//	*myPtr=299;
+//	cout<<"\nModified value : "<<*myPtr<<endl;
+//	
+	delete myPtr;
+	
+//	myPtr= new int(300);
+//	cout<<"Newly created myPtr"<<*myPtr<<endl;
+//	
+	
 }
