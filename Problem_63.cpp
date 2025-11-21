@@ -3,9 +3,14 @@
 #include<iomanip>
 
 using namespace std;
-
+void printFormatted(ofstream& outfile,int highNum);
 int main()
 {
+	
+	int highNum;
+	cout<<"Enter the range(highNum) : "<<endl;
+	cin>>highNum;
+	
 	cout<<"Writing to file..."<<endl;
 	
 	ofstream outfile("output.txt");
@@ -19,7 +24,19 @@ int main()
 	cout<<fixed<<showpoint;
 	outfile<<fixed<<showpoint;
 	
-	for(int i=01;i<=10;i++)
+	printFormatted(outfile,highNum);
+	outfile<<"Hello World!!"<<endl;
+	
+	outfile.close();
+	
+	cout<<"Done"<<endl;
+	
+	return 0;
+}
+
+void printFormatted(ofstream& outfile,int highNum)
+{
+	for(int i=01;i<=highNum;i++)
 	{
 		double value1 =i*5.7575;
 		double value2=i*3.14;
@@ -32,11 +49,4 @@ int main()
 		
 		
 	}
-	outfile<<"Hello World!!"<<endl;
-	
-	outfile.close();
-	
-	cout<<"Done"<<endl;
-	
-	return 0;
 }
