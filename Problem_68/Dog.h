@@ -12,7 +12,7 @@ class Dog:public Animal{
 		Dog(string name,double weight,string breed);
 		string getBreed();
 		void digHole();
-		string makeNoise();
+		string makeNoise()override;
 		
 		private :
 			string breed;
