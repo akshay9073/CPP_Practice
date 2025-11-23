@@ -8,6 +8,13 @@ int main()
 	Animal myAnimal("Sam",100);
 	Dog dog("Rover",80,"Greyhound");
 	
+	Animal *dogPtr= new Dog("Fido",115,"Golden Retriever");
+	cout<<"Make Noise? "<<dogPtr->makeNoise()<<endl;
+	
+	delete dogPtr;
+	dogPtr=nullptr;
+	
+	
 	cout<<"Animal name : "<<myAnimal.getName()<<endl;
 	cout<<"Animal weight : "<<myAnimal.getWeight()<<endl;
 	cout<<"Animal noise : "<<myAnimal.makeNoise()<<endl;
