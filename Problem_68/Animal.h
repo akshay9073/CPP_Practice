@@ -13,7 +13,7 @@ class Animal{
 		void setName(string name);
 		double getWeight();
 		void setWeight(double weight);
-		string makeNoise();
+		virtual string makeNoise();
 	
 	
 	private :
