@@ -32,3 +32,8 @@ string Animal::makeNoise()
 {
 	return "unkown";
 }
+
+string Animal::eat()
+{
+	return "I eat food";
+}

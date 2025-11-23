@@ -13,6 +13,7 @@ class Dog:public Animal{
 		string getBreed();
 		void digHole();
 		string makeNoise()override;
+		string eat() override;
 		
 		private :
 			string breed;

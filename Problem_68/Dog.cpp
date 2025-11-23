@@ -22,3 +22,8 @@ string Dog::makeNoise()
 {
 	return "Wooff";
 }
+
+string Dog::eat()
+{
+	return "I love dog food!!";
+}

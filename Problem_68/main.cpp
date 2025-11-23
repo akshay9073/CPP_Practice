@@ -10,6 +10,7 @@ int main()
 	
 	Animal *dogPtr= new Dog("Fido",115,"Golden Retriever");
 	cout<<"Make Noise? "<<dogPtr->makeNoise()<<endl;
+	cout<<"Dog Eat "<<dogPtr->eat()<<endl;
 	
 	delete dogPtr;
 	dogPtr=nullptr;
