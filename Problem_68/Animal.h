@@ -16,7 +16,7 @@ class Animal{
 		virtual string makeNoise();
 		virtual string eat();
 	
-	private :
+//	private :
 		string name;
 		double weight;
 };
