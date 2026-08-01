@@ -14,6 +14,21 @@ int main()
 	
 	cout<<"Pointer in cpp : "<<*q<<endl;
 	
+	int *arr;
+	int size;
+	
+	cout<<"Enter the size of array : "<<endl;
+	
+	cin>>size;
+	
+	arr=new int[size];
+	cout<<"Dynamic allocation of memory for array : "<<endl;
+	arr[0]=2;
+	
+	delete arr;
+	
+	cout<<"Array element is : "<<arr[0]<<endl;
+	
 	delete p;
 	delete q;
 	return 0;
