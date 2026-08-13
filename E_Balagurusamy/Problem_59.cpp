@@ -41,6 +41,7 @@ int main()
 {
 	P p;
 	p.display();
+//	p.M::display();
 }
 
 
