@@ -8,6 +8,12 @@ T Max(T a, T b)
 	return a>b?a:b;
 }
 
+template<typename T1, typename T2>
+void Product(T1 a, T2 b)
+{
+	cout<<" a * b =  "<<a*b<<endl;
+}
+
 int main()
 {
 //	auto result1=Max(3,5.7); Template issue for type one is int & double 
@@ -23,6 +29,8 @@ int main()
 	
 	cout<<"result1 :"<<result1<<" \n";
 	cout<<"result2 : "<<result2<<" \n";
+	
+	Product(3,5.5);
 	
 	return 0;
 }
