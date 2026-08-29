@@ -25,6 +25,13 @@ void myswap(T &x, T &y)
 	y=temp;
 }
 
+template<typename T>
+void display(T a[],int n)
+{
+	for(int i=0;i<n;i++)
+	cout<<a[i]<<"\t";
+}
+
 int main()
 {
 	int size;
@@ -38,21 +45,26 @@ int main()
 	cin>>arr[i];
 	
 	cout<<"Display Array Before Sort : "<<endl;
-	for(int i=0;i<size;i++)
-	cout<<arr[i]<<"\t";
+	display(arr,size);
 	
 	bubble(arr,size);
 	
 	cout<<"\nDisplay Array after sort : "<<endl;
-	for(int i=0;i<size;i++)
-	cout<<arr[i]<<" \t";
+	display(arr,size);
 	
 	char str[]="Akshay";
 	bubble(str,strlen(str));
 	
-	cout<<"\nString before swap : "<<str<<endl;
+	cout<<"\nString before sort : "<<str<<endl;
 	bubble(str,strlen(str));
-	cout<<"\nString after swap  : "<<str<<endl;
+	cout<<"\nString after sort  : "<<str<<endl;
+	
+	float farr[5]={11.4,112.4,3.5,2.6,4.6};
+	cout<<"\nfloat Before sorting : ";
+	display(farr,5);
+	bubble(farr,5);
+	cout<<"\nfloat after sorting : ";
+	display(farr,5);
 	
 	return 0;
 }
