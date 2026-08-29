@@ -1,5 +1,5 @@
 #include<iostream>
-
+#include<cstring>
 using namespace std;
 
 template<typename T>
@@ -46,6 +46,13 @@ int main()
 	cout<<"\nDisplay Array after sort : "<<endl;
 	for(int i=0;i<size;i++)
 	cout<<arr[i]<<" \t";
+	
+	char str[]="Akshay";
+	bubble(str,strlen(str));
+	
+	cout<<"\nString before swap : "<<str<<endl;
+	bubble(str,strlen(str));
+	cout<<"\nString after swap  : "<<str<<endl;
 	
 	return 0;
 }
