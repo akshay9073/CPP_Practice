@@ -13,5 +13,25 @@ int main()
 		cout<<c<<" \t";
 	}
 	
+	cout<<"\nAccess element one by one"<<endl;
+	cout<<car[0]<<endl;
+	cout<<car[1]<<endl;
+	cout<<car.front()<<endl;
+	cout<<car.back()<<endl;
+	cout<<car.at(2)<<"\t";
+	cout<<car.at(4);
+	
+	cout<<"\n Adding element to vector"<<endl;
+	car.push_back("Alto");
+	car.push_back("Rolls");
+	car.push_back("Bentle");
+	car.push_back("Ferrari");
+	
+	for(string c:car)
+	{
+		cout<<c<<endl;
+	}
+	
+	
 	return 0;
 }
