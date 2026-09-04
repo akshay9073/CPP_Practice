@@ -32,6 +32,21 @@ int main()
 		cout<<c<<endl;
 	}
 	
+	cout<<"Pop Back function"<<endl;
+	car.pop_back();
+	car.pop_back();
+	car.pop_back();
+	
+	cout<<"\nPop Back"<<endl;
+	for(string c:car)
+	{
+		cout<<c<<endl;
+	}
+	
+	cout<<"Size of car : "<<car.size();
+	cout<<"Is empty : "<<car.empty();
+	
+	
 	
 	return 0;
 }
